@@ -8,7 +8,7 @@ browser.get(START_URL)
 time.sleep(10)
 
 def scrape():
-    headers = ["name", "light_years_from_earth", "planet_mass", "stellar_magnitude", "discovery_date"]
+    headers = ["Proper Name", "Distance", "Mass", "Radius"]
     planet_data = []
     for i in range(0, 458):
         soup = BeautifulSoup(browser.page_source, "html.parser")
